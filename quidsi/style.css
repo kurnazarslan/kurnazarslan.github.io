@@ -1,0 +1,22 @@
+:root {
+  --bg: #E3E2DC; --surface: #F1F0EB; --line: #CFCCC4; --fg: #211A26; --muted: #665F6B;
+  --bronze: #8F6227; --wine: #6B2340;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #16111A; --surface: #211A26; --line: #3A3040; --fg: #ECE6DC; --muted: #A59CA8; --bronze: #D2A05A; --wine: #CF7598; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Georgia, "Times New Roman", serif; }
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+.eyebrow { color: var(--bronze); font: 600 12px/1 system-ui, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+h1 { color: var(--wine); font-weight: 400; font-size: 44px; line-height: 1.1; margin: 8px 0 2px; }
+.sub { color: var(--bronze); font-size: 18px; margin: 0 0 24px; }
+h2 { font-weight: 400; font-size: 26px; margin: 36px 0 8px; }
+h3 { font-size: 18px; margin: 24px 0 4px; }
+p, li { color: var(--fg); }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--wine); }
+.lang { display: flex; gap: 8px; margin: 0 0 28px; font: 600 14px system-ui, sans-serif; }
+.lang a { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); text-decoration: none; color: var(--fg); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; margin: 16px 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
